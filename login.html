@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login- Page, HTML</title>
+    <style>
+    /* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Background with blurred Zomato homepage */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  /* Use your homepage as a background image */
+  background: url("img/homepage.png") no-repeat center center/cover;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Dark shadow overlay */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);  /* black shadow overlay */
+  backdrop-filter: blur(8px);      /* blur effect */
+  z-index: 1;
+}
+
+/* Main login container */
+main {
+  position: relative;
+  z-index: 2; /* make sure container is above shadow */
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 320px;
+}
+
+/* Labels */
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+  text-align: left;
+}
+
+/* Input field */
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #e23744; /* Zomato red */
+  box-shadow: 0 0 4px rgba(226, 55, 68, 0.5);
+}
+
+/* Links styled as buttons */
+a {
+  display: block;
+  text-decoration: none;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+/* OTP button */
+a:first-of-type {
+  background: #e23744;
+  color: #fff;
+}
+
+a:first-of-type:hover {
+  background: #c12d38;
+}
+
+/* Continue with Email & Google */
+a:nth-of-type(2),
+a:nth-of-type(3) {
+  background: #f4f4f4;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+a:nth-of-type(2):hover,
+a:nth-of-type(3):hover {
+  background: #e9e9e9;
+}
+
+/* Create account link (red text only) */
+a:last-of-type {
+  background: none;
+  color: #e23744;
+  padding: 0;
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+a:last-of-type:hover {
+  text-decoration: underline;
+}
+
+/* Paragraphs */
+p {
+  margin: 12px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <main>
+        </div>
+            <label for="phone">Phone</label>
+            <input id="phone" type="number" placeholder="Enter your Phone">
+        </div>
+        <br>
+        <a href="#">Set one time password</a>
+    </br>
+         <p>Or</p>
+
+         <a href="#"> <img src="img/icon.png" width="16" height="12" alt="">        Continue with Email    </a>
+         <br>
+         <a href="#"> <img src="img/icon-02.png" width="16" height="12" alt="">     Continue with Google</a>
+</br>
+
+
+<p>New to Zomato</p><a href="#">Create account?</a>
+    </main>
+</body>
+</html>
