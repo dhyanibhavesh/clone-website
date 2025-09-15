@@ -73,7 +73,7 @@ generate the hero HTML + CSS snippet (responsive),
 
 
 
-https://github.com/dhyanibhavesh/clone-website/blob/main/Screenshot%20(12).png?raw=true
+![image alt](https://github.com/dhyanibhavesh/clone-website/blob/main/Screenshot%20(12).png?raw=true)
 
 or create sample JSON data for restaurants.
 
