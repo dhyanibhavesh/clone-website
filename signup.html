@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up , HTML</title>
+    <style>
+        /* Reset default margins and paddings */
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body background and centering */
+body {
+  background-color: #fefefe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Signup container */
+main {
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  padding: 30px;
+  width: 350px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  border: 2px solid #ffffff !important;  /* Force white border */
+}
+
+
+/* Input fields */
+input[type="name"],
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.3s;
+}
+
+input[type="name"]:focus,
+input[type="email"]:focus {
+  border: 1px solid white;
+  box-shadow: 0 0 5px white;
+}
+
+/* Checkbox + label */
+#terms {
+  margin-right: 8px;
+}
+label {
+  font-size: 14px;
+  color: #444;
+}
+
+/* Create Account button */
+.create-account {
+  display: block;
+  margin: 15px auto;
+  padding: 12px;
+  background: #e23744;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.3s;
+  width: 100%;
+}
+.create-account:hover {
+  background: #c21f32;
+}
+
+/* Google button */
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 15px auto;
+  padding: 12px;
+  background: #fff;              /* White background */
+  color: #000;                   /* Black text */
+  border: 1px solid #ccc;        /* Light border */
+  border-radius: 10px;           /* Rounded edges */
+  font-weight: 500;
+  text-decoration: none;
+  width: 100%;                   /* Full width button */
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.google-btn:hover {
+  background: #f8f8f8;           /* Slight grey hover */
+  border-color: #bbb;
+}
+
+/* Google icon */
+.google-btn img {
+  width: 18px;
+  height: 18px;
+}
+
+
+/* Login link */
+.login-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #e23744;
+  text-decoration: none;
+  font-weight: 500;
+}
+.login-link:hover {
+  text-decoration: underline;
+}
+
+/* Paragraphs */
+p {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Background: blurred homepage image */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: url("img/homepage.png") no-repeat center center/cover;
+  position: relative;
+}
+
+/* Shadow overlay to dim the background */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);  /* dark shadow overlay */
+  backdrop-filter: blur(5px);       /* blur effect */
+  z-index: 0;
+}
+
+/* Signup container */
+main {
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  padding: 30px;
+  width: 350px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  border: 2px solid #e23744;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <main>
+        </div>
+            <label for="name"></label>
+            <input id="name" type="name" placeholder="Name">
+        </div>
+
+        <br>
+        </div>
+            <label for="Email"></label>
+            <input id="Email" type="email" placeholder="Email">
+        </div>
+    </br>
+
+
+    <div>
+        <input id="terms" type="checkbox" required>
+        <label for="terms">I agree to Zomato Terms of Service, Privacy Policies 
+            and content Policies.
+    </div>
+
+
+    <a href="#" class="create-account">Create acoount</a>
+    <p>Or</p>
+     <a href="#" class="google-btn"> <img src="img/icon-02.png" width="16" height="12" alt="">        Sign in with Google  </a>
+
+     <p>Already have an account</p><a href="#" class="login-link">Login?</a>
+    </main>
+</body>
+</html>
